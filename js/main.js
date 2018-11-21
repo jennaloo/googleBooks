@@ -33,3 +33,10 @@ function getBook() {
         type: "GET"
     })
 }
+
+document.addEventListener('keypress',
+    function (e) {
+        if (13 == e.keyCode) {
+            getBook();
+        }
+    });
